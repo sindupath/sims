@@ -6,11 +6,13 @@
 }
 body{
     width: 100%;
-    height: 100%;
+    height: max-content;
+    
 }
 .header{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow: hidden;
     
 }
 .header-bar{
@@ -33,7 +35,7 @@ body{
 
 .img-bar{
     height: 400px;
-    
+    padding: 0 5%;
     width: 100%;
 }
 .header-bar{
@@ -165,4 +167,169 @@ select, option{
 .nav-bar a:hover{
     color: orangered;
     border-bottom: 4px solid orangered;
+}
+.img-bar{
+    position: relative;
+}
+.img-bar .banner{
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+    background-image: url();
+    
+}
+.text-bar{
+    position: absolute;
+    top: 50px;
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
+}
+.text-bar h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: orangered;
+}
+.text-bar h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.text-bar p{
+    font-size: 1rem;
+}
+.text-bar button{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
+
+.img-bar img{
+    width:100%;
+    height: auto;
+}
+
+
+
+
+
+
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.fh{
+    border: 1px solid grey;
+}
+.copy-box{
+    width: 100%;
+    height:200px;
+    padding-top: 20px;
+    color: grey;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.copy-box h3{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.copy-box img {
+    width: auto;
+    height: 30px;
+}
+.our-box{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: first baseline;
+
+}
+.our{
+    height: auto;
+    width:33.3% ;
+    height: auto;
+   
+    
+   
+}
+.our h3{
+font-size: 20px;
+font-weight: 500;
+color:orangered;
+
+}
+.our ul{
+    list-style: none;
+    color: grey;
+    gap: 10px;
+}
+
+.dir-box{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+.dir{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+.dir h1{
+    color: orangered;
+    font-weight: 600;
+    font-size: 25px;
+}
+.dir  h2{
+    font-size: 18px;
+    text-align: start;
+    min-width: 20%;
+    font-weight: 600;
+ 
+}
+.dir h5{
+
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 60%;
+    text-align: left;
+    word-spacing: 5px;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:orangered;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    box-shadow: 1px 2px 0 1px black;
+}
+body::-webkit-scrollbar-thumb{
+   background-color: grey;
+   border-radius: 3px;
+    
 }
