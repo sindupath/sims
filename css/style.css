@@ -1,58 +1,59 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    width: 100%;
-    height: max-content;
-    
-}
-.header{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    
-}
-.header-bar{
-    width: 100%;
-    height: 50px;
-   
-}
-.nav-bar{
-    width: 100%;
-    height: 50px;
-  
-}
-.logo-bar{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-   
+    font-family: "Poppins", sans-serif;
 }
 
-.img-bar{
-    height: 400px;
-    padding: 0 5%;
+body {
     width: 100%;
+    height: max-content;
 }
-.header-bar{
+
+/* side scroll bar style*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+    box-shadow: 1px 2px 0 1px black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 3px;
+}
+
+/* header styles */
+
+/* basic styles */
+
+.header {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* header tag contains 3 type of sections  */
+
+/**/
+/*header bar  contain 3 stage */
+
+.header-bar {
+    width: 100%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
-    
 }
-.social-bar{
+
+.social-bar {
     width: 150px;
     height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.center-bar{
+
+.center-bar {
     width: 60%;
     font-weight: 500;
     height: 90%;
@@ -63,43 +64,61 @@ body{
     justify-content: center;
     color: rgb(105, 100, 100);
 }
-.lang-bar{
+
+.lang-bar {
     width: 20%;
     height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.social-bar span{
+
+.social-bar span {
     height: 28px;
     width: 28px;
-    background-color: #D6D6D6;
+    background-color: #d6d6d6;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     text-align: center;
-
 }
-.social-bar span:hover{
+
+.social-bar span:hover {
     background-color: darkorange;
 }
 
-.social-bar span:hover > i{
+.social-bar span:hover>i {
     font-size: 20px;
-    color:black;
+    color: black;
 }
-select, option{
-    border: #D6D6D6;
+
+select,
+option {
+    border: #d6d6d6;
     border-radius: 10px;
 }
-.lang-bar #lang{
+
+.lang-bar #lang {
     padding: 5px;
     width: 100px;
     height: 30px;
     border-radius: 5px;
 }
-.logo{
+
+/*end of the header-bar*/
+
+/* logo-bar start it contain 
+       3 stage logo search and other cart icons */
+
+.logo-bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     height: 90%;
     width: 20%;
     display: flex;
@@ -107,113 +126,138 @@ select, option{
     justify-content: center;
     position: relative;
 }
-.search{
+
+.search {
     height: 90%;
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
-.order{
+
+.order {
     width: 20%;
     height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.logo img{
+
+.logo img {
     width: auto;
     height: 30%;
 }
-.search input{
+
+.search input {
     width: 90%;
     height: 40%;
     border-radius: 10px;
-   border: 2px solid grey;
-   padding-left: 30px;
-   font-size: 16px;
+    border: 2px solid grey;
+    padding-left: 30px;
+    font-size: 16px;
 }
 
-.search i{
+.search i {
     position: absolute;
     font-size: 25px;
     color: rgb(94, 90, 90);
-    right:8%;
+    right: 8%;
 }
-.order span{
+
+.order span {
     font-size: 30px;
 }
 
-.nav-bar{
+/* end of logo-bar*/
+
+
+/* nav-bar start from here*/
+
+
+.nav-bar {
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-evenly;
     padding-left: 10%;
-    padding-right:10% ;
+    padding-right: 10%;
     text-align: center;
     align-items: center;
 }
 
-.nav-bar a{
+.nav-bar a {
     color: black;
-    min-height:50px;
+    min-height: 50px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     padding: 10px;
     transition: 0.3s;
 }
-.nav-bar a:hover{
+
+.nav-bar a:hover {
     color: orangered;
     border-bottom: 4px solid orangered;
 }
-.img-bar{
+
+
+
+/* container 1 start from here simple slider 
+    is made up here */
+
+
+.container {
+    width: 100%;
+    height: auto;
+
+}
+
+.img-bar {
+    height: auto;
+    padding: 0 5%;
+    width: 100%;
     position: relative;
 }
-.img-bar .banner{
-    height: fit-content;
+
+.img-bar .banner {
+    width: 100%;
     width: 100%;
     border-radius: 10px;
-    background-image: url();
-    
 }
-.text-bar{
+
+.text-bar {
     position: absolute;
     top: 50px;
     width: 50%;
     height: 50%;
     margin-left: 10%;
 }
-.text-bar h2{
+
+.text-bar h2 {
     font-size: 1.4rem;
     font-weight: 500;
     color: orangered;
 }
-.text-bar h1{
+
+.text-bar h1 {
     font-size: 2rem;
     font-weight: 500;
 }
-.text-bar p{
+
+.text-bar p {
     font-size: 1rem;
 }
-.text-bar button{
+
+.text-bar button {
     border-radius: 5px;
     border: none;
-    padding: 5px;
+    padding:5px 10px;
     margin-top: 5px;
     background-color: orangered;
     color: white;
     font-weight: 500;
-}
-
-
-
-
-
-.img-bar img{
-    width:100%;
-    height: auto;
+    font-size: 0.8rem;
 }
 
 
@@ -221,35 +265,75 @@ select, option{
 
 
 
-footer{
+
+
+
+
+
+
+/* footer start from here
+it have 
+3 type of data
+
+*/
+
+footer {
     height: 100%;
     width: 100%;
     background-color: black;
     display: flex;
     flex-direction: column;
 }
-.fh{
+
+.fh {
     border: 1px solid grey;
 }
-.copy-box{
+
+/* directory or site map of full site */
+
+
+.dir-box {
     width: 100%;
-    height:200px;
-    padding-top: 20px;
-    color: grey;
-    align-items: center;
+    height: auto;
+    padding: 50px;
     display: flex;
+    color: white;
     flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
 }
-.copy-box h3{
+
+.dir {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.dir h1 {
+    color: orangered;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.dir h2 {
+    font-size: 18px;
+    text-align: start;
+    min-width: 20%;
+    font-weight: 600;
+}
+
+.dir h5 {
     font-size: 16px;
     font-weight: 400;
-    margin-top: 5px;
+    min-width: 60%;
+    text-align: left;
+    word-spacing: 5px;
 }
-.copy-box img {
-    width: auto;
-    height: 30px;
-}
-.our-box{
+
+/* service box */
+
+.our-box {
     width: 100%;
     height: auto;
     padding: 50px;
@@ -257,79 +341,47 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     align-items: first baseline;
+}
 
-}
-.our{
+.our {
     height: auto;
-    width:33.3% ;
+    width: 33.3%;
     height: auto;
-   
-    
-   
 }
-.our h3{
-font-size: 20px;
-font-weight: 500;
-color:orangered;
 
+.our h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 89, 0);
 }
-.our ul{
+
+.our ul {
     list-style: none;
     color: grey;
     gap: 10px;
 }
 
-.dir-box{
-    width: 100%;
-    height: auto;
-    padding: 50px;
-    display: flex;
-    color: white;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
 
-}
-.dir{
-    display: flex;
+/* copyright*/
+
+
+.copy-box {
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    color: grey;
     align-items: center;
-    margin-top: 10px;
-    width: 100%;
-    
+    display: flex;
+    flex-direction: column;
 }
-.dir h1{
-    color: orangered;
-    font-weight: 600;
-    font-size: 25px;
-}
-.dir  h2{
-    font-size: 18px;
-    text-align: start;
-    min-width: 20%;
-    font-weight: 600;
- 
-}
-.dir h5{
 
+.copy-box h3 {
     font-size: 16px;
     font-weight: 400;
-    min-width: 60%;
-    text-align: left;
-    word-spacing: 5px;
-    
+    margin-top: 5px;
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color:orangered;
-}
-body::-webkit-scrollbar{
-    width: 10px;
-    box-shadow: 1px 2px 0 1px black;
-}
-body::-webkit-scrollbar-thumb{
-   background-color: grey;
-   border-radius: 3px;
-    
+.copy-box img {
+    width: auto;
+    height: 30px;
 }
