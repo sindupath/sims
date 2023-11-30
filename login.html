@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMS MARKET</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        p{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!--login form -->
+
+
+<form id="loginForm">
+    <h2 class="center-text">Login</h2>
+    <label for="username">Mobile number:</label>
+    <input type="tel" pattern="[0-9]{10}" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="login()">Login</button>
+
+    <p class="center-text">
+        <a href="#" onclick="showForgotPasswordForm()">Forgot Password?</a>
+    </p>
+
+    <p class="center-text">
+        Don't have an account? <a href="#" onclick="showSignUpForm()">Sign Up</a>
+    </p>
+</form>
+
+<!--forget password-->
+
+<form id="forgotPasswordForm" style="display: none;">
+    <h2 class="center-text">Forgot Password</h2>
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+    <button type="button" onclick="sendPasswordResetOtp()">Send Reset OTP</button>
+
+    <p class="center-text">
+        <a href="#" onclick="showLoginForm()">Back to Login</a>
+    </p>
+</form>
+
+<!---otp verfication form-->
+
+<form id="otpForm" style="display: none;">
+    <h2 class="center-text">Password Reset</h2>
+    <label for="mobile">Enter OTP:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+    <button type="button" onclick="verifyOtp()">verify OTP</button>
+
+    <p class="center-text">
+        <a href="#" onclick="showForgotPasswordForm()">I don't get OTP</a>
+    </p>
+</form>
+
+<!--sinup form-->
+
+<form id="signUpForm" style="display: none;">
+    <h2 class="center-text">Create an Account</h2>
+    <label for="newUsername">Username:</label>
+    <input type="text" id="newUsername" name="newUsername" required>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+    <label for="newPassword">Password:</label>
+    <input type="password" id="newPassword" name="newPassword" required>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+    <button type="button" onclick="createAccount()">Create Account</button>
+
+    <p class="center-text">
+        <a href="#" onclick="showLoginForm()">Back to Login</a>
+    </p>
+</form>
+
+<!---register otp form-->
+
+<form id="registerOtpForm" style="display: none;">
+    <h2 class="center-text">Phone Number verfication</h2>
+    <label for="mobile">Enter OTP:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+    <button type="button" onclick="verifyOtp()">verify OTP</button>
+
+    <p class="center-text">
+        <a href="#" onclick="showSignUpForm()">I don't get OTP</a>
+    </p>
+</form>
+
+<script>
+    function showLoginForm() {
+        document.getElementById('loginForm').style.display = 'block';
+        document.getElementById('forgotPasswordForm').style.display = 'none';
+        document.getElementById('signUpForm').style.display = 'none';
+        document.getElementById('otpForm').style.display = 'none';
+        document.getElementById('registerOtpForm').style.display = 'none';
+    }
+    function showotpForm() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('forgotPasswordForm').style.display = 'none';
+        document.getElementById('signUpForm').style.display = 'none';
+        document.getElementById('otpForm').style.display = 'none';
+        document.getElementById('registerOtpForm').style.display = 'none';
+    }
+
+    function showForgotPasswordForm() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('forgotPasswordForm').style.display = 'block';
+        document.getElementById('signUpForm').style.display = 'none';
+        document.getElementById('otpForm').style.display = 'none';
+        document.getElementById('registerOtpForm').style.display = 'none';
+    }
+
+    function showSignUpForm() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('forgotPasswordForm').style.display = 'none';
+        document.getElementById('signUpForm').style.display = 'block';
+        document.getElementById('otpForm').style.display = 'none';
+        document.getElementById('registerOtpForm').style.display = 'none';
+    }
+    /*this is use for otp verify*/
+
+    function sendPasswordResetOtp(){
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('forgotPasswordForm').style.display = 'none';
+        document.getElementById('signUpForm').style.display = 'none';
+        document.getElementById('otpForm').style.display = 'block';
+        document.getElementById('registerOtpForm').style.display = 'none';
+    }
+
+
+    function createAccount(){
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('forgotPasswordForm').style.display = 'none';
+        document.getElementById('signUpForm').style.display = 'none';
+        document.getElementById('otpForm').style.display = 'none';
+        document.getElementById('registerOtpForm').style.display = 'block';
+       
+
+    }
+    function login(){
+        alert("Login successful")
+
+    }
+    function verifyOtp(){
+alert("otp verify success")
+    }
+  
+</script>
+
+</body>
+</html>
