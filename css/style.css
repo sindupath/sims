@@ -14,11 +14,12 @@ body {
 
 body::-webkit-scrollbar {
     width: 10px;
-    box-shadow: 1px 2px 0 1px black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: grey;
+    background-color: gainsboro;
     border-radius: 3px;
 }
 
@@ -29,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 .header {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+  
 }
 
 /* header tag contains 3 type of sections  */
@@ -214,20 +215,26 @@ option {
 }
 
 .img-bar {
-    height: auto;
+    height: fit-content;
     padding: 0 5%;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
-.img-bar .banner {
+.banner:nth-child(1){
+   
     width: 100%;
-    width: 100%;
+    height: auto;
     border-radius: 10px;
+    opacity: 1;
 }
+
+    
 
 .text-bar {
     position: absolute;
+    z-index: 10;
     top: 50px;
     width: 50%;
     height: 50%;
@@ -262,7 +269,34 @@ option {
 
 
 
+/* cat box start from here */
+.side-box{
+    min-width: 100%;
+    height: auto;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5% 10%;
+   
 
+}
+.side-box::-webkit-scrollbar{
+   background-color: gainsboro;
+   height: 10px;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.side-box::-webkit-scrollbar-thumb{
+    background-color:orangered;
+    border-radius: 3px;
+}
+
+.cat-box{
+    width: 300px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    height: 100px;
+}
 
 
 
@@ -281,9 +315,10 @@ footer {
     height: 100%;
     width: 100%;
     background-color: black;
-    bottom: 0;
     display: flex;
     flex-direction: column;
+    position: static;
+    bottom: 0;
 }
 
 .fh {
