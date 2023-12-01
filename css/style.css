@@ -315,11 +315,13 @@ it have
 footer {
     height: 100%;
     width: 100%;
+    position: absolute;
+    margin-top: 100px; 
     background-color: black;
     display: flex;
     flex-direction: column;
-    position: static;
-    bottom: 0;
+    top:100%;
+   
 }
 
 .fh {
