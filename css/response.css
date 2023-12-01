@@ -1,0 +1,44 @@
+@media (max-width: 640px) {
+  .our-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .our {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10%;
+  }
+  .our ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    
+    height: auto;
+    margin-left: 30%;
+  }
+  .our h3 {
+    min-width: 100%;
+    margin-left: 10%;
+   
+
+  }
+
+  .our ul li {
+    width: 200px;
+    height: 20px;
+  }
+  .copy-box img {
+    width: auto;
+    height: 20px;
+  }
+  .copy-box h3 {
+    font-size: 12px;
+  }
+}
