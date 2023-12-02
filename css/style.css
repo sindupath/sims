@@ -224,26 +224,29 @@ option {
 
 .text-bar {
   position: absolute;
-  z-index: 10;
-  top: 50px;
-  width: 50%;
-  height: 50%;
-  margin-left: 10%;
+  z-index: 4;
+  width: auto;
+  padding:5%;
+  height: auto;
+  top: 0;
+  
 }
 
 .text-bar h2 {
-  font-size: 1.4rem;
+  font-size: 30px;
   font-weight: 500;
   color: orangered;
 }
 
 .text-bar h1 {
-  font-size: 2rem;
+  font-size: 50px;
   font-weight: 500;
+  width: 50%;
 }
 
 .text-bar p {
-  font-size: 1rem;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
 .text-bar button {
@@ -254,7 +257,7 @@ option {
   background-color: orangered;
   color: white;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 20px;
 }
 
 /* cat box start from here */
