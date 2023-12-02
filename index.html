@@ -1,212 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMS MARKET</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMS-Market digital marketing</title>
 
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/response.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/logo black.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
+  <body>
+    <!--header start from here-->
+    <header class="header">
+      <div class="header-bar">
+        <div class="social-bar">
+          <span><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+          <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+          <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+          <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+        </div>
+        <div class="center-bar">
+          NEW DIWALI SALE START SOON ! READY TO GET DISCOUNT !!
+        </div>
+        <div class="lang-bar">
+          <select name="lang" id="lang">
+            <option value="english">English</option>
+            <option value="tamil">Tamil</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+      <div class="logo-bar">
+        <div class="logo"><img src="./images/SIMS (5).png" alt="logo" /></div>
+        <div class="search">
+          <input type="text" />
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="order">
+          <span class="fa fa-user"></span>
+          <span class="fa fa-heart"></span>
+          <span class="fa fa-cart-arrow-down"></span>
+        </div>
+      </div>
+      <hr />
+      <nav class="nav-bar">
+        <a href="#">HOME</a>
+        <a href="#">CATEGORIES</a>
+        <a href="#">MEN'S</a>
+        <a href="#">WOMEN'S</a>
+        <a href="#">KID'S</a>
+        <a href="#">HOT OFFERS</a>
+      </nav>
+    </header>
+    <!--container 1 start from here-->
+    <div class="container">
+      <div class="img-bar">
+        <img class="banner" src="./images/banner-1.jpg" alt="" />
+        <div class="text-bar">
+          <h2>Trending items</h2>
+          <h1>WOMEN'S LATEST FASHION SALE</h1>
+          <p>starting at Rs 200</p>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+      <!--side box start from here-->
+    </div>
+    <div class="side-box">
+      <div class="cat-box"></div>
+      <div class="cat-box"></div>
+      <div class="cat-box"></div>
+      <div class="cat-box"></div>
+      <div class="cat-box"></div>
+      <div class="cat-box"></div>
+      <div class="cat-box"></div>
+      <div class="cat-box"></div>
+      <div class="cat-box"></div>
+    </div>
 
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
+    <!--side box start from here-->
 
-        button {
-            background-color: #4caf50;
-            color: #fff;
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .center-text {
-            text-align: center;
-        }
-        p{
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-
-
-    <!--login form -->
-
-
-<form id="loginForm">
-    <h2 class="center-text">Login</h2>
-    <label for="username">Mobile number:</label>
-    <input type="tel" pattern="[0-9]{10}" id="username" name="username" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="button" onclick="login()">Login</button>
-
-    <p class="center-text">
-        <a href="#" onclick="showForgotPasswordForm()">Forgot Password?</a>
-    </p>
-
-    <p class="center-text">
-        Don't have an account? <a href="#" onclick="showSignUpForm()">Sign Up</a>
-    </p>
-</form>
-
-<!--forget password-->
-
-<form id="forgotPasswordForm" style="display: none;">
-    <h2 class="center-text">Forgot Password</h2>
-    <label for="mobile">Mobile Number:</label>
-    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
-
-    <button type="button" onclick="sendPasswordResetOtp()">Send Reset OTP</button>
-
-    <p class="center-text">
-        <a href="#" onclick="showLoginForm()">Back to Login</a>
-    </p>
-</form>
-
-<!---otp verfication form-->
-
-<form id="otpForm" style="display: none;">
-    <h2 class="center-text">Password Reset</h2>
-    <label for="mobile">Enter OTP:</label>
-    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
-
-    <button type="button" onclick="verifyOtp()">verify OTP</button>
-
-    <p class="center-text">
-        <a href="#" onclick="showForgotPasswordForm()">I don't get OTP</a>
-    </p>
-</form>
-
-<!--sinup form-->
-
-<form id="signUpForm" style="display: none;">
-    <h2 class="center-text">Create an Account</h2>
-    <label for="newUsername">Username:</label>
-    <input type="text" id="newUsername" name="newUsername" required>
-
-    <label for="mobile">Mobile Number:</label>
-    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
-
-    <label for="newPassword">Password:</label>
-    <input type="password" id="newPassword" name="newPassword" required>
-
-    <label for="confirmPassword">Confirm Password:</label>
-    <input type="password" id="confirmPassword" name="confirmPassword" required>
-
-    <button type="button" onclick="createAccount()">Create Account</button>
-
-    <p class="center-text">
-        <a href="#" onclick="showLoginForm()">Back to Login</a>
-    </p>
-</form>
-
-<!---register otp form-->
-
-<form id="registerOtpForm" style="display: none;">
-    <h2 class="center-text">Phone Number verfication</h2>
-    <label for="mobile">Enter OTP:</label>
-    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
-
-    <button type="button" onclick="verifyOtp()">verify OTP</button>
-
-    <p class="center-text">
-        <a href="#" onclick="showSignUpForm()">I don't get OTP</a>
-    </p>
-</form>
-
-<script>
-    function showLoginForm() {
-        document.getElementById('loginForm').style.display = 'block';
-        document.getElementById('forgotPasswordForm').style.display = 'none';
-        document.getElementById('signUpForm').style.display = 'none';
-        document.getElementById('otpForm').style.display = 'none';
-        document.getElementById('registerOtpForm').style.display = 'none';
-    }
-    function showotpForm() {
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('forgotPasswordForm').style.display = 'none';
-        document.getElementById('signUpForm').style.display = 'none';
-        document.getElementById('otpForm').style.display = 'none';
-        document.getElementById('registerOtpForm').style.display = 'none';
-    }
-
-    function showForgotPasswordForm() {
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('forgotPasswordForm').style.display = 'block';
-        document.getElementById('signUpForm').style.display = 'none';
-        document.getElementById('otpForm').style.display = 'none';
-        document.getElementById('registerOtpForm').style.display = 'none';
-    }
-
-    function showSignUpForm() {
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('forgotPasswordForm').style.display = 'none';
-        document.getElementById('signUpForm').style.display = 'block';
-        document.getElementById('otpForm').style.display = 'none';
-        document.getElementById('registerOtpForm').style.display = 'none';
-    }
-    /*this is use for otp verify*/
-
-    function sendPasswordResetOtp(){
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('forgotPasswordForm').style.display = 'none';
-        document.getElementById('signUpForm').style.display = 'none';
-        document.getElementById('otpForm').style.display = 'block';
-        document.getElementById('registerOtpForm').style.display = 'none';
-    }
+    <div class="cont-box">
+      <div class="aside">
+        <div class="menu">
+          <h3>CATEGORY</h3>
+          <ul>
+            <li>Cloths</li>
+            <li>footwear</li>
+            <li>jewelry</li>
+            <li>cosmetics</li>
+            <li>Perfume</li>
+            <li>bags</li>
+            <li>gifts</li>
+            <li>others</li>
+          </ul>
+        </div>
+         
+      </div>
+      <div class="content">
+        <div class="cont">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <div class="cont">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <div class="cont">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
 
 
-    function createAccount(){
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('forgotPasswordForm').style.display = 'none';
-        document.getElementById('signUpForm').style.display = 'none';
-        document.getElementById('otpForm').style.display = 'none';
-        document.getElementById('registerOtpForm').style.display = 'block';
-       
+      </div>
+    </div>
 
-    }
-    function login(){
-        alert("Login successful")
+    <!--add box is start from here-->
+    <div class="add-box">
+      <img src="./banner-2.jpg" alt="" />
+      <div class="add-cont">
+        <div class="cont">
+          <div class="prod"></div>
+          <div class="prod"></div>
+          <div class="prod"></div>
+          <div class="prod"></div>
+        </div>
+        <div class="cont">
+          <div class="prod"></div>
+          <div class="prod"></div>
+          <div class="prod"></div>
+          <div class="prod"></div>
+        </div>
+        <div class="cont">
+          <div class="prod"></div>
+          <div class="prod"></div>
+          <div class="prod"></div>
+          <div class="prod"></div>
+        </div>
+        <div class="cont">
+          <div class="prod"></div>
+          <div class="prod"></div>
+          <div class="prod"></div>
+          <div class="prod"></div>
+        </div>
+      </div>
+    </div>
 
-    }
-    function verifyOtp(){
-alert("otp verify success")
-    }
-  
-</script>
+    <!--footer start from here-->
+    <div class="footer"></div>
+    <footer>
+      <div class="dir-box">
+        <div class="dir">
+          <h1>BRAND DIRECTORY</h1>
+        </div>
+        <div class="dir">
+          <h2>FASHION:</h2>
+          <h5>T-Shirt | Shirt | Shorts & Jeans | Innerwear</h5>
+        </div>
+        <div class="dir">
+          <h2>FOOTWEAR</h2>
+          <h5>Shoes | Sandal | Sleepers | heels</h5>
+        </div>
+        <div class="dir">
+          <h2>COSMETIC</h2>
+          <h5>Lipstick | Powder | Perfume</h5>
+        </div>
+        <div class="dir">
+          <h2>OTHERS</h2>
+          <h5>Customize Frames</h5>
+        </div>
+      </div>
+      <hr class="fh" />
 
-</body>
+      <!--service bar is start from here-->
+
+      <div class="our-box">
+        <div class="our">
+          <h3>OUR SERVICE</h3>
+          <ul>
+            <li>Delivery</li>
+            <li>Legal Notice</li>
+
+            <li>Terms And Conditions</li>
+            <li>About</li>
+            <li>Secure Payment</li>
+          </ul>
+        </div>
+        <div class="our">
+          <h3>PRODUCTS</h3>
+          <ul>
+            <li>Price Drop</li>
+            <li>New Products</li>
+
+            <li>Best Sale</li>
+            <li>Customer Service</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="our">
+          <h3>CONTACT</h3>
+          <ul>
+            <li>+91 9159666518</li>
+            <li>simsmarketing@gmail.com</li>
+            <li>Sankarankovil, Tirunelveli, Tamilnadu - 627754</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="fh" />
+
+      <!--payment and copyright bar start from here-->
+
+      <div class="copy-box">
+        <img src="./images/payment.png" alt="" />
+        <h3>Copyright © SIMS MARKET All Rights Reserved.</h3>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
