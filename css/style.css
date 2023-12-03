@@ -344,7 +344,7 @@ option {
   width: auto;
   position: relative;
   display: flex;
-  margin: 20px 5%;
+  margin: 20px 20px;
 }
 .aside {
   width: 25%;
@@ -572,12 +572,14 @@ footer {
 .dir-box {
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 20px;
+  padding-left: 20px;
   display: flex;
   color: white;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
+  
 }
 
 .dir {
