@@ -23,6 +23,16 @@ body::-webkit-scrollbar-thumb {
   background-color: gainsboro;
   border-radius: 3px;
 }
+.category-box::-webkit-scrollbar {
+  width: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.category-box::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 3px;
+}
 
 /* header styles */
 
@@ -31,7 +41,6 @@ body::-webkit-scrollbar-thumb {
 .header {
   width: 100%;
   height: 100%;
- 
 }
 
 /* header tag contains 3 type of sections  */
@@ -183,7 +192,6 @@ option {
   text-align: center;
   margin-bottom: 10px;
   overflow: auto;
-  
 }
 
 .nav-bar a {
@@ -193,7 +201,7 @@ option {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  padding: 10px 5px 0  5px;
+  padding: 10px 5px 0 5px;
   transition: 0.1s;
 }
 
@@ -209,7 +217,6 @@ option {
   position: absolute;
   margin-top: 15px;
   border-radius: 10px;
-  
 }
 .nav-box-1 {
   width: 100%;
@@ -244,7 +251,7 @@ option {
 
 .container {
   width: 100%;
-  
+
   height: auto;
 }
 
@@ -265,7 +272,6 @@ option {
 
 .text-bar {
   position: absolute;
-  z-index: 4;
   width: auto;
   padding: 5%;
   height: auto;
@@ -283,11 +289,10 @@ option {
   font-weight: 500;
   margin-top: 20px;
   width: 80%;
- 
 }
 
 .text-bar p {
-  font-size:25px;
+  font-size: 25px;
   margin-top: 20px;
   text-transform: capitalize;
 }
@@ -305,7 +310,6 @@ option {
 
 /* cat box start from here */
 .side-box {
-  
   min-width: auto;
   height: auto;
   overflow: auto;
@@ -339,7 +343,6 @@ option {
 /*content box start from here */
 
 .cont-box {
-  
   height: auto;
   width: auto;
   position: relative;
@@ -362,7 +365,6 @@ option {
   width: 100%;
   height: auto;
   padding: 20px;
-  
 }
 
 .menu h3 {
@@ -377,7 +379,6 @@ option {
 .menu ul {
   list-style: none;
   display: block;
-  
 }
 .menu ul li {
   margin-top: 10px;
@@ -393,27 +394,22 @@ option {
   justify-content: space-between;
   transition: 2s;
   align-items: center;
-  
 }
-
 
 .items {
   width: 100%;
-  height:auto;
+  height: auto;
   display: none;
-  
 }
-.items ul{
+.items ul {
   list-style: none;
   width: 100%;
-
 }
-.menu ul li input{
+.menu ul li input {
   display: none;
 }
-.menu ul li input:checked ~.items{
+.menu ul li input:checked ~ .items {
   display: block;
-
 }
 .items ul li {
   font-size: 14px;
@@ -430,7 +426,6 @@ option {
   margin-top: 20px;
   width: 75%;
   height: auto;
-  
 }
 .content .cont {
   width: 100%;
@@ -464,7 +459,6 @@ option {
 
 /*additional box start from here */
 .add-box {
-  
   height: auto;
   width: 100%;
   padding: 0 5% 0 5%;
@@ -487,7 +481,6 @@ option {
   white-space: nowrap;
   padding: 5px;
   margin: 10px;
-  
 }
 
 .prod {
@@ -510,7 +503,6 @@ it have
 */
 
 footer {
-
   height: 100%;
   width: 100%;
   margin-top: 100px;
@@ -525,7 +517,7 @@ footer {
 }
 
 /* bottom nav bar start from here now */
-.bottom{
+.bottom {
   width: 100%;
   height: 50px;
   position: fixed;
@@ -533,33 +525,106 @@ footer {
   display: none;
   align-items: center;
   justify-content: center;
-  
- 
-  
 }
-.bottom-nav{
+.bottom-nav {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  border-radius:  5px  5px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px 5px 0 0;
   height: 50px;
   width: 70%;
   align-items: center;
   justify-content: space-evenly;
   display: flex;
-
 }
-.bottom-nav .icon-box{
+.bottom-nav .icon-box {
   height: 30px;
   width: 30px;
   background-color: white;
   align-items: center;
 }
-.bottom-nav .icon-box a{
+.bottom-nav .icon-box a {
   width: 100%;
   height: 100%;
   background-color: white;
 }
-.bottom-nav .icon-box a i{
+.bottom-nav .icon-box label {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+.bottom-nav .icon-box a i {
+  color: black;
+  width: 100%;
+  font-size: 28px;
+  height: 100%;
+  text-align: center;
+}
+#cate-1 {
+  display: none;
+}
+#cate-2 {
+  display: none;
+}
+.category-box {
+  min-width: 40%;
+  height: 90%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  white-space: nowrap;
+  left: 0;
+  z-index: 4;
+  background-color: white;
+  border-radius: 0 5px 0 5px;
+  display: none;
+  border-radius: 0 10px 10px 0;
+}
+
+
+.category-box .menu {
+  margin-top: 20px;
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.category-box .menu ul li label {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.category-box .menu ul li label .icon-box {
+  width: 30px;
+  background-color: gainsboro;
+  height: 30px;
+}
+.category-box .menu ul li label i {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  font-size: 15px;
+}
+.category-box .menu ul li .items {
+  margin-left: 20px;
+}
+
+.category-box::-webkit-scrollbar {
+  width: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.category-box::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 3px;
+}
+
+.bottom-nav .icon-box label i {
   color: black;
   width: 100%;
   font-size: 28px;
@@ -579,7 +644,6 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  
 }
 
 .dir {
