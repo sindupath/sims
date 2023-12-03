@@ -9,6 +9,7 @@ body {
   width: 100%;
   height: max-content;
   position: relative;
+  overflow-x: hidden;
 }
 
 /* side scroll bar style*/
@@ -31,6 +32,7 @@ body::-webkit-scrollbar-thumb {
 .header {
   width: 100%;
   height: 100%;
+ 
 }
 
 /* header tag contains 3 type of sections  */
@@ -177,12 +179,14 @@ option {
 .nav-bar {
   width: 100%;
   height: 60px;
+ 
   padding-left: 10%;
   padding-right: 10%;
   text-align: center;
   overflow: auto;
   white-space: nowrap;
   margin-bottom: 10px;
+  
 }
 
 .nav-bar a {
@@ -208,6 +212,7 @@ option {
   position: absolute;
   margin-top: 15px;
   border-radius: 10px;
+  
 }
 .nav-box-1 {
   width: 100%;
@@ -242,6 +247,7 @@ option {
 
 .container {
   width: 100%;
+  
   height: auto;
 }
 
@@ -279,6 +285,7 @@ option {
   font-size: 35px;
   font-weight: 500;
   width: 80%;
+ 
 }
 
 .text-bar p {
@@ -299,6 +306,7 @@ option {
 
 /* cat box start from here */
 .side-box {
+  
   min-width: auto;
   height: auto;
   overflow: auto;
@@ -332,6 +340,7 @@ option {
 /*content box start from here */
 
 .cont-box {
+  
   height: auto;
   width: auto;
   position: relative;
@@ -368,6 +377,7 @@ option {
 .menu ul {
   list-style: none;
   display: block;
+  
 }
 .menu ul li {
   margin-top: 10px;
@@ -383,6 +393,7 @@ option {
   justify-content: space-between;
   transition: 2s;
   align-items: center;
+  
 }
 
 
@@ -390,6 +401,7 @@ option {
   width: 100%;
   height:auto;
   display: none;
+  
 }
 .items ul{
   list-style: none;
@@ -418,6 +430,7 @@ option {
   margin-top: 20px;
   width: 75%;
   height: auto;
+  
 }
 .content .cont {
   width: 100%;
@@ -451,6 +464,7 @@ option {
 
 /*additional box start from here */
 .add-box {
+  
   height: auto;
   width: 100%;
   padding: 0 5% 0 5%;
@@ -473,6 +487,7 @@ option {
   white-space: nowrap;
   padding: 5px;
   margin: 10px;
+  
 }
 
 .prod {
@@ -495,6 +510,7 @@ it have
 */
 
 footer {
+
   height: 100%;
   width: 100%;
   margin-top: 100px;
@@ -512,12 +528,11 @@ footer {
 .bottom{
   width: 100%;
   height: 40px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  visibility: none;
   
  
   
