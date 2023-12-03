@@ -106,7 +106,7 @@
   height: auto;
 }
 .copy-box h3{
-  font-size: 14px;
+  font-size: 12px;
 }
 #cate-1:hover + .category-box{
   display: flex;
@@ -114,8 +114,11 @@
 #cate-2:hover + .category-box{
   display: flex;
 }
-
+.nav-bar{
+  display: none;
+}
 
 
   }
+
 }
