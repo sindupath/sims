@@ -8,6 +8,7 @@
 body {
   width: 100%;
   height: max-content;
+  position: relative;
 }
 
 /* side scroll bar style*/
@@ -505,6 +506,45 @@ footer {
 
 .fh {
   border: 1px solid grey;
+}
+
+/* bottom nav bar start from here now */
+.bottom{
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+.bottom-nav{
+  background-color: white;
+  border-radius:  5px  5px 0 0;
+  height: 50px;
+  width: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+
+}
+.bottom-nav .icon-box{
+  height: 30px;
+  width: 30px;
+  align-items: center;
+}
+.bottom-nav .icon-box a{
+  width: 100%;
+  height: 100%;
+}
+.bottom-nav .icon-box a i{
+  color: black;
+  width: 100%;
+  font-size: 28px;
+  height: 100%;
+  text-align: center;
 }
 
 /* directory or site map of full site */
