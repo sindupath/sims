@@ -1,4 +1,7 @@
 @media (max-width: 640px) {
+.bottom{
+  visibility: visible;
+}
   .our-box {
     display: flex;
     flex-direction: column;
