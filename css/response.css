@@ -15,7 +15,7 @@
     }
 
     .text-bar button {
-      font-size: 15px;
+      font-size: 25px;
       margin-top: 20px;
     }
   }
@@ -23,6 +23,7 @@
 
 @media only screen and (max-width: 768px) {
   body {
+    overflow-x: hidden;
    
     .social-bar {
       display: none;
@@ -77,7 +78,6 @@
     }
     .bottom{
       display: flex;
-      height: 70px;
       margin: 0;
     }
     .dir{
