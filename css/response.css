@@ -108,10 +108,10 @@
 .copy-box h3{
   font-size: 14px;
 }
-#cate-1:checked + .category-box{
+#cate-1:hover + .category-box{
   display: flex;
 }
-#cate-2:checked + .category-box{
+#cate-2:hover + .category-box{
   display: flex;
 }
 
