@@ -163,11 +163,41 @@ body{
     .aside {
       display: none;
     }
+    .cat-box{
+      width: 250px;
+      height: 100px;
+    }
+ 
+    .header-bar{
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .logo-bar{
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .lang-bar{
+      display: none;
+    }
+    .search i{
+      font-size: 18px;
+    }
+    .search input{
+      font-size: 15px;
+    }
+
     .bottom-nav {
       width: 100%;
     }
-    .add-box {
-      width: 100%;
+    .box{
+      height: 150px;
+      width: 250px;
+    }
+    .logo{
+      height: 70px;
+    }
+    .prod{
+      width:150px;
+      height: 200px;
+      margin-right: 10px;
     }
     .banner:nth-child(1) {
       display: none;
@@ -210,10 +240,10 @@ body{
   }
 
 .bottom-nav .icon-box label i{
-  font-size: 20px;
+  font-size: 24px;
 }
 .bottom-nav .icon-box a i{
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .dir h1{
@@ -246,4 +276,37 @@ body{
   height: auto;
 }
   }
+}
+@media only screen and (max-width: 350px) {
+body{
+  .center-bar{
+    font-size: 12px;
+  }
+  .logo{
+    height: 60px;
+  }
+  .search i{
+    font-size: 12px;
+  }
+  .search input{
+    height: 25px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .bottom-nav .icon-box label i{
+    font-size: 20px;
+  }
+  .bottom-nav .icon-box a i{
+    font-size: 20px;
+  }
+  
+}
+
+}
+@media only screen and (max-width: 280px){
+ 
+body{
+  display: none;
+}
+
 }

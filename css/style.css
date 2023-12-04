@@ -441,7 +441,7 @@ option {
   width: 100%;
   height: auto;
   padding: 5px;
-  margin: 20px;
+  margin: 5px;
   overflow: auto;
   white-space: nowrap;
 }
@@ -484,6 +484,7 @@ option {
 }
 
 .add-cont {
+  margin-top: 20px;
   width: 100%;
   height: auto;
   display: block;
