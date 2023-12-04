@@ -21,6 +21,7 @@
   }
 }
 
+
 @media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -73,16 +74,16 @@
     }
     .content{
       width: 100%;
-     
-      overflow: hidden
     }
+    
+   
     .bottom{
       display: flex;
-      margin: 0;
+      
     }
     .dir{
       display: block;
-      margin-left: 30px;
+      padding-left: 30px;
     }
     .our-box{
       display: block;
@@ -106,7 +107,7 @@
   height: auto;
 }
 .copy-box h3{
-  font-size: 12px;
+  font-size: 12gpx;
 }
 #cate-1:hover + .category-box{
   display: flex;
@@ -121,4 +122,24 @@
 
   }
 
+}
+
+@media only screen and (max-width: 425px){
+  body{
+
+ .bottom{
+  width: 100%;
+
+ }
+ .aside{
+  display: none;
+ }
+ .bottom-nav{
+  width: 100%;
+ }
+.add-box{
+  width: 100%;
+}
+
+  }
 }

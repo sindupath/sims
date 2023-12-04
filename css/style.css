@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  height: max-content;
+  height:fit-content;
   position: relative;
 }
 
@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: gainsboro;
+  background-color: rgb(85, 79, 79);
   border-radius: 3px;
 }
 .category-box::-webkit-scrollbar {
@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb {
 .header {
   width: 100%;
   height: 100%;
+  
 }
 
 /* header tag contains 3 type of sections  */
@@ -192,6 +193,7 @@ option {
   text-align: center;
   margin-bottom: 10px;
   overflow: auto;
+  
 }
 
 .nav-bar a {
@@ -257,10 +259,9 @@ option {
 
 .img-bar {
   height: fit-content;
-  padding: 0 5%;
+  padding:  20px;
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .banner:nth-child(1) {
@@ -314,7 +315,8 @@ option {
   height: auto;
   overflow: auto;
   white-space: nowrap;
-  margin: 10px 5%;
+  margin: 10px 20px;
+  
   padding: 0;
   padding-bottom: 10px;
 }
@@ -348,6 +350,7 @@ option {
   position: relative;
   display: flex;
   margin: 20px 20px;
+  
 }
 .aside {
   width: 25%;
@@ -365,6 +368,7 @@ option {
   width: 100%;
   height: auto;
   padding: 20px;
+  
 }
 
 .menu h3 {
@@ -423,9 +427,14 @@ option {
   height: 30px;
 }
 .content {
-  margin-top: 20px;
+  padding: 20px;
   width: 75%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 }
 .content .cont {
   width: 100%;
@@ -437,9 +446,10 @@ option {
 }
 .box {
   display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
   height: 300px;
   width: 200px;
-  margin-right: 20px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -480,7 +490,7 @@ option {
   overflow: auto;
   white-space: nowrap;
   padding: 5px;
-  margin: 10px;
+ 
 }
 
 .prod {
@@ -522,6 +532,7 @@ footer {
   height: 50px;
   position: fixed;
   bottom: 0;
+  display: flex;
   display: none;
   align-items: center;
   justify-content: center;
@@ -638,18 +649,17 @@ footer {
   width: 100%;
   height: auto;
   padding: 20px;
-  padding-left: 20px;
   display: flex;
   color: white;
   flex-direction: column;
   justify-content: space-evenly;
-  text-align: center;
+  text-align: flex-start;
 }
 
 .dir {
   display: flex;
-  align-items: center;
   margin-top: 10px;
+  height: fit-content;
   width: 100%;
 }
 
