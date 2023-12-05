@@ -579,7 +579,9 @@ footer {
 }
 
 .bottom-nav .icon-box .menu {
-  min-width: 50%;
+  min-width: 40%;
+  box-sizing: content-box;
+  max-width: 60%;
   height: 80%;
   position: fixed;
   top: 0;
@@ -590,13 +592,29 @@ footer {
   display: none;
   border-radius: 0 10px 10px 0;
   padding: 20px;
+ 
+}
+#menu-1-input{
+  display: none;
+}
+#menu-2-input{
+  display: none;
 }
 
-.bottom-nav .icon-box a:hover ~ .menu {
+
+#menu-1-input:checked ~ .menu-1{
   display: block;
+  z-index: 4;
 }
+#menu-2-input:checked  ~ .menu-2{
+  display: block;
+  z-index: 4;
+}
+
+
+
 .bottom-nav .menu h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color: orangered;
   margin-bottom: 20px;
@@ -606,16 +624,17 @@ footer {
 
 .bottom-nav .menu ul {
   list-style: none;
-  display: block;
+  
 }
 .bottom-nav .menu ul li {
   margin-top: 10px;
   min-height: 40px;
   width: 100%;
-  display: block;
+ 
 }
 .bottom-nav .menu ul li .name {
   display: flex;
+  font-size: 18px;
   cursor: pointer;
   width: 100%;
   height: 40px;
@@ -626,25 +645,31 @@ footer {
 
 .bottom-nav .menu ul li .items {
   width: 100%;
-  height: auto;
+  height: fit-content;
   display: none;
+  list-style: none;
   
 }
-.bottom-nav .menu ul li .name:hover ~ .items{
+ .bottom-nav .menu ul li .name:hover ~ .items{
   display: block;
-}
+} 
 .bottom-nav .menu ul li .items {
-  list-style: none;
+ height: auto;
   width: 100%;
 }
 
 .bottom-nav .menu ul li .items ul li {
   font-size: 14px;
+ min-height: 10px;
+  align-items: center;
+  display: flex;
+
+
 }
 .bottom-nav .menu ul li .items ul li a{
   text-decoration: none;
-  color: black;
-  font-size: 14px;
+font-weight: 500;
+  font-size: 15px;
 }
 
 .bottom-nav .menu ul li .name .icon-box {
@@ -747,4 +772,8 @@ footer {
 .copy-box img {
   width: auto;
   height: 30px;
+}
+
+.active{
+  display: block;
 }

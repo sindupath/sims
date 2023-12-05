@@ -336,9 +336,10 @@
     </footer>
     <div class="bottom">
       <div class="bottom-nav">
-        <div class="icon-box">
-          <a href="#"><i class="fa fa-bars"></i></a>
-          <div class="menu">
+        <label for="menu-1-input" class="icon-box">
+        <input type="checkbox" name="menu-1-input" id="menu-1-input">
+          <a ><i class="fa fa-bars"></i></a>
+          <div class="menu menu-1">
             <h3>Menu</h3>
              <ul>
               <li>
@@ -428,7 +429,7 @@
              </ul>
             
           </div>
-        </div>
+        </label>
         <div class="icon-box">
           <a href="#"><i class="fa fa-shopping-cart"></i></a>
         </div>
@@ -438,16 +439,18 @@
         <div class="icon-box">
           <a href="#"><i class="fa fa-heart-o"></i></a>
         </div>
-        <div class="icon-box">
-          <a href="#"><i class="fa fa-square"></i></a>
-          <div class="menu">
+        <label for="menu-2-input" class="icon-box">
+          <input type="checkbox" name="menu-2-input" id="menu-2-input">
+          
+          <a ><i class="fa fa-square"></i></a>
+          <div class="menu menu-2">
             <h3>CATEGORY</h3>
              <ul>
               <li>
                 <div class="name">
                   <div class="icon-box"></div> Cloths <i class="fa fa-plus"></i>
                 </div>
-                <div class="items">
+                <div class="items" id="items">
                   <ul>
                     <li><a href="#">Men's Cloths</a></li>
                     <li><a href="#"> Women's Cloths</a></li>
@@ -519,7 +522,7 @@
              </ul>
             
           </div>
-        </div>
+        </label>
       </div>
     </div>
     <script src="./js/script.js"></script>
