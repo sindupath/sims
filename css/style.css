@@ -64,6 +64,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-evenly;
 }
 
+
 .center-bar {
   width: 60%;
   font-weight: 500;
@@ -154,7 +155,10 @@ option {
   align-items: center;
   justify-content: space-evenly;
 }
-
+.order a{
+  text-decoration: none;
+  color: black;
+}
 .logo img {
   width: auto;
   height: 30%;
