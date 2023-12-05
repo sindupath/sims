@@ -71,6 +71,9 @@
     .aside {
       display: none;
     }
+    .aside .menu{
+      display: none;
+    }
     .content {
       width: 100%;
     }
@@ -104,12 +107,7 @@
     .copy-box h3 {
       font-size: 12gpx;
     }
-    #cate-1:hover + .category-box {
-      display: flex;
-    }
-    #cate-2:hover + .category-box {
-      display: flex;
-    }
+  
     .nav-bar {
       display: none;
     }
@@ -151,12 +149,14 @@ body{
   .our{
     width: 100%;
   }
+ 
 }
 }
 
 
 @media only screen and (max-width: 430px) {
   body {
+ 
     .bottom {
       width: 100%;
     }
@@ -275,6 +275,19 @@ body{
   width: 70%;
   height: auto;
 }
+.bottom-nav .menu ul li .name{
+  font-size: 13px;
+}
+.bottom-nav .menu ul li i{
+  font-size: 14px;
+}
+.bottom-nav .menu ul li .name .icon-box{
+  width: 20px;
+  height: 20px;
+}
+
+
+
   }
 }
 @media only screen and (max-width: 350px) {
@@ -303,10 +316,4 @@ body{
 }
 
 }
-@media only screen and (max-width: 280px){
- 
-body{
-  display: none;
-}
 
-}
