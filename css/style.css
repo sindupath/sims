@@ -424,6 +424,7 @@ option {
   
 }
 
+
 .aside .menu::-webkit-scrollbar {
   width: 10px;
   margin: 20px;
@@ -652,11 +653,11 @@ footer {
  
 }
 
-.fa-close{
+.close{
   position: absolute;
   cursor: pointer;
   top: 10px;
-  font-size: 12px;
+  font-size: 20px;
   right: 20px;
   padding: 5px;
   width: 20px;
