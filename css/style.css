@@ -581,6 +581,7 @@ footer {
   font-size: 28px;
   height: 100%;
   text-align: center;
+  cursor: pointer;
 }
 
 .bottom-nav .icon-box .menu {
@@ -618,6 +619,7 @@ footer {
 
 .fa-close{
   position: absolute;
+  cursor: pointer;
   top: 10px;
   font-size: 12px;
   right: 20px;
