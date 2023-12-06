@@ -367,16 +367,21 @@ option {
   border-radius: 5px;
   top: 0;
   position: sticky;
+ 
 }
 
 .aside .menu {
   margin-top: 40px;
+  display: block;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   border-radius: 10px;
   width: 100%;
-  height: auto;
+  height:600px;
   padding: 20px;
+  overflow: scroll;
+  white-space:nowrap;
+ 
 }
 
 .aside .menu h3 {
@@ -398,6 +403,9 @@ option {
   width: 100%;
   display: block;
 }
+.aside .menu ul li input{
+  display: none;
+}
 .aside .menu ul li .name {
   display: flex;
   cursor: pointer;
@@ -414,7 +422,22 @@ option {
   display: none;
   
 }
-.aside .menu ul li .name:hover ~ .items{
+.aside .menu ul li #cat-item-1:checked ~ #cat-items-1{
+  display: block;
+}
+.aside .menu ul li #cat-item-2:checked ~ #cat-items-2{
+  display: block;
+}
+.aside .menu ul li #cat-item-3:checked ~ #cat-items-3{
+  display: block;
+}
+.aside .menu ul li #cat-item-4:checked ~ #cat-items-4{
+  display: block;
+}
+.aside .menu ul li #cat-item-5:checked ~ #cat-items-5{
+  display: block;
+}
+.aside .menu ul li #cat-item-6:checked ~ #cat-items-6{
   display: block;
 }
 .aside .menu ul li .items ul {
