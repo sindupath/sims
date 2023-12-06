@@ -169,6 +169,7 @@ body{
     }
  
     .header-bar{
+      display: none;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
     .logo-bar{
@@ -275,8 +276,16 @@ body{
   width: 70%;
   height: auto;
 }
+.bottom-nav .menu{
+  width: 60%;
+}
 .bottom-nav .menu ul li .name{
-  font-size: 13px;
+  font-size: 14px;
+ 
+}
+.bottom-nav .menu ul li .items ul li a{
+  font-size: 12px;
+  color: black;
 }
 .bottom-nav .menu ul li i{
   font-size: 14px;
@@ -285,6 +294,7 @@ body{
   width: 20px;
   height: 20px;
 }
+
 
 
 
